@@ -1,8 +1,8 @@
-# Contributing to Castor
+# Contributing to Castor JDO
 
 ## Introduction
 
-The Castor project is an open source project hosted at [github](github.com/castor-data-binding)
+The Castor JDO project is an open source project hosted at [Github](github.com/castor-data-binding/castor-jdo)
 and it is released under a very
 open license. This means there are many ways to contribute to the
 project by e.g. coding, documenting, answering questions on the mailing lists,
@@ -12,22 +12,16 @@ To begin with, we suggest you to subscribe to the [mailing lists](mailing-lists.
 We recommend that you listen for a while to hear how others make contributions.
 
 You can get your local working copy of the current code base (of any particular
-release) from the [git repository](http://github.com/castor-data-binding). Review the list
-of unassigned issues in [GitHub issues](https://github.com/castor-data-binding/castor/issues)
+release) from the [git repository](http://github.com/castor-data-binding/castor-jdo). Review the list
+of unassigned issues in [GitHub issues](https://github.com/castor-data-binding/castor-jdo/issues)
 and choose a task -- or perhaps you have noticed something that needs patching.
-(Before you start changing any code, please create a Jira task for your changes
-if one does not already exist.)  Make your changes, test those changes, submit a pull request.
+Make your changes, test those changes, submit a pull request.
 
 Document writers are usually the rarest and most wanted people, so if you would
 like to help but you're not familiar with the innermost technical details, don't
 worry.  Other committers will spend time with you and will assist you with their
 knowledge. We're a friendly bunch and we appreciate anyone who is willing to
 commit their most valuable resource -- time -- to help out..
-
-## Useful links
-
-* [How to run CTF test suite](../how-to/xml/how-to-run-xml-ctf-suite.html)
-* [How to submit an XML-specific bug report](../how-to/xml/how-to-submit-an-xml-bug.html)
 
 ## Guidelines for code contributions
 
@@ -134,28 +128,21 @@ require proper trademark acknowledgement in documentation. Some packages
 or APIs are available for distribution only once they have been formally
 released. For example, this policy applies to all APIs coming from Sun.
 
-## Building Castor
+## Building Castor JDO
 
-Castor relies on [Maven](http://maven.apache.org) as build management system. Please refer to the following sections as well 
-to get an idea about the project layout, the individual modules and the structure within a module. 
+Castor JDO relies on [Maven](http://maven.apache.org) as build management system. Please refer to the following sections as well to get an idea about the project layout, the individual modules and the structure within a module. 
         
-Support for Ant as build tool has been dropped completely. Please note, though, that the code base still includes Ant build files. Please
-do not use them! Those Ant files are in the process of being removed, which will take us some time.
+Support for Ant as build tool has been dropped completely. Please note, though, that the code base still includes Ant build files. Please do not use them! Those Ant files are in the process of being removed, which will take us some time.
         
 ### Project layout
         
-Castor follows a standard Maven multi-module project structure.
+Castor JDO follows a standard Maven multi-module project structure.
             
 Currently, the following main modules are available:
 
 | Name | Description | Since
 |------|-------------|------
-| anttask | Ant task definitions for Castor tools | 1.0.5
-| core | Castor core classes | 1.2.1
 | cpa | Castor JDO - persistence framework | 1.1
-| xml | XML data binding framework | 1.2.1
-| codegen | XML code generator | 1.1.1
-| schema | XML schema support (classes) | 1.2
 | ddlgen | Castor JDO DDL generator | 1.1
 | examples | Examples for all functional areas | 1.0.5
             
@@ -163,18 +150,14 @@ In addition, there's various modules available that represent integration and pe
 
 | Name | Description | Since
 |------|-------------|------
-| xmlctf | Integration test suite for Castor XML | 1.2
 | cpactf | Integration test suite for Castor JDO | 1.2
 | cpaptf | Performance test suite for Castor JDO | 1.2
-| xmlctf-framework | Framework code for XMLCTF | 1.2
-| maven-plugins| Maven plugins supporting execution from XMLCTF within Maven | 1.2
 
         
 Finally, there's a module to provide Maven archetypes for Castor:
 
 | Name | Description | Since
 |------|-------------|------
-| codegen-testcase-archetype | Maven archetype for XML code generator | 1.2
 | cpa-testcase-archetype | Maven archetype for XML code generator | 1.2
 
 
@@ -198,7 +181,7 @@ Last but not least, there's a module to provide the project documentation for Ca
 
 ## Directory Structure within a module
 
-Castor follows the Maven standards for folder hierarchies.
+Castor JDO follows the Maven standards for folder hierarchies.
 
 
 ### Builing code
@@ -230,18 +213,14 @@ The above command will effect in running only the subset of tests located under 
                 
 For more information about how to execute the CTF test suite and its internals, please visit (development/test-framework.html).
                 
-### Several Castor checkouts parallel in Eclipse
+### Several Castor JDO checkouts parallel in Eclipse
       
-In case you need to check out Castor more than once - as you may be working on several Jira issues at the same time -
-you'll come across a subtle problem related to how multi-module Maven projects are being integrated with Eclipse.
+In case you need to check out Castor JDO more than once - as you may be working on several Jira issues at the same time - you'll come across a subtle problem related to how multi-module Maven projects are being integrated with Eclipse.
         
 By definition, when executing `mvn eclipse:eclipse` to generate the Eclipse project files (`.project` and
-`.classpath`, amongst others) for all the modules, Maven will use the artifact names of the module as Eclipse project name - which 
-is fine as long as you are working with one checkout only at a time. When wanting to use several checkouts in parallel, this 
-will cause name collisions.
+`.classpath`, amongst others) for all the modules, Maven will use the artifact names of the module as Eclipse project name - which is fine as long as you are working with one checkout only at a time. When wanting to use several checkouts in parallel, this will cause name collisions.
         
-In order to avoid this, please execute `mvn eclipse:eclipse` as follows, passing an arbitrary string to the eclipse plugin
-to append to the artifact name when deducing the project name.
+In order to avoid this, please execute `mvn eclipse:eclipse` as follows, passing an arbitrary string to the eclipse pluginto append to the artifact name when deducing the project name.
         
 ```
 mvn -Declipse.projectNameTemplate=[artifactId]-2612
@@ -249,13 +228,13 @@ mvn -Declipse.projectNameTemplate=[artifactId]-2612
 
 In above sample, a Jira issue number has been used to uniquely identify the individual modules in Eclipse.
          
-### Castor and Eclipse
+### Castor JDO and Eclipse
     
-In order to develop Castor sources with Eclipse, you will have to perform the following steps so that you are fully enabled to code with Eclipse. 
+In order to develop Castor JDO sources with Eclipse, you will have to perform the following steps so that you are fully enabled to code with Eclipse. 
         
 1. `mvn compile` 
 2. `mvn eclipse:eclipse`
-3. Import all Castor modules into your Eclipse workspace.
+3. Import all Castor JDO modules into your Eclipse workspace.
 
 ## References
 

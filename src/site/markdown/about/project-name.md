@@ -45,7 +45,7 @@ I'm certain that they mind that our minds are nowhere near the kind of mind that
 for during their recruitment process. Not that I actually understand what that means,
 but if you're an MIT alum you are probably relieved we didn't attend.
         
-Now, on to the explaination...
+Now, on to the explanation...
         
 The truth of the matter is that it's highly classified, and on a need-to-know basis.
 Even members of our own team do not know. However we are allowed to post more speculations

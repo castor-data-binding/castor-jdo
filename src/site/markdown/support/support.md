@@ -2,11 +2,11 @@
 
 ## Introduction
       
-Castor is an open-source product. This means that the source code is
-available at no charge and may be obtained from [github](http://github.com/castor-data-binding
+Castor JDO is an open-source product. This means that the source code is
+available at no charge and may be obtained from [Github](http://github.com/castor-data-binding/castor-jdo)
 using git.
       
-Since castor is freely available, including the source code, there is no
+Since Castor JDO is freely available, including the source code, there is no
 guaranteed level of support available. The online [documentation](#Documentation)
 is the best place to start.
 If you have trouble or have more advanced questions not available in the
@@ -29,11 +29,11 @@ If you can't find something in the documentation, try looking through
 the examples (as shipped as part of the source distribution).
       
 There are also numerous [presentations and
-articles](../documentation/publications.html) available about Castor to help get you started.
+articles](../documentation/publications.html) available about Castor JDO to help get you started.
 
 ## Reporting Bugs and Bug Tracking
 
-If you find a bug, please file a report at [GitHub issues](https://github.com/castor-data-binding/castor/issues).
+If you find a bug, please file a report at [GitHub issues](https://github.com/castor-data-binding/castor-jdo/issues).
 
 ## Commercial Support
       

@@ -21,34 +21,6 @@ to discuss any suggestions/recommendations related to this offerings.
 # Individuals/Companies and their commercial offerings
 
 ## Companies
-
-### Indoqa
-
-Contact: Werner Guttmann (werner DOT guttmann AT indoqa DOT com)
-
-*Indoqa* offers expertise in the area of J2EE applications, with a strong 
-emphasis on the integration of the following (essential) framework areas:
-
-* object/relational mapping tools
-* XML data binding frameworks
-* Spring
-
-in general and Castor JDO and XML in particular. Above that, we aspire to 
-support clients in their focus to integrate such frameworks into their 
-enterprise computing platforms
-
-In the person of *Werner Guttmann*, Indoqa provides a long-time committer 
-of Castor, who has been responsible for:
-
-* Improving and maintaining both Castor JDO and XML
-* Enhancing the Castor XML code generator
-* Providing JPA 3.0 compliance
-* Providing JAXB 2.1 compliance
-* Castor JDO offering for Spring ORM
-* Castor XML offering for Spring
-
-In the person of *Matthias Epheser*, Indoqa provides a long-time contributor
-in code areas related to code generation.
             
 ### CODA: Financial Intelligence (http://www.coda.com/)
 
