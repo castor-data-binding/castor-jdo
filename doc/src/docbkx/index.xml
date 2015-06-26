@@ -30,10 +30,6 @@
 
   <!--  <xi:include href="reference/introduction.xml" />  -->
 
-  <xi:include href="reference/xml.xml" />
-  
-  <xi:include href="reference/code-generator.xml" />
-
   <xi:include href="reference/jdo.xml" />
   
   <xi:include href="reference/advanced-jdo.xml" />
@@ -48,8 +44,6 @@
     <xi:include href="reference/jdo-extensions.xml" />
     <xi:include href="reference/solrj-extensions.xml" />
   -->
-
-  <xi:include href="reference/code-generator-extension.xml" />
 
   <!--  <xi:include href="reference/showcase.xml" />  -->
   
