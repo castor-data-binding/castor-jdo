@@ -10,7 +10,6 @@
 	Castor is an open source data binding framework for Java[tm]. It’s the shortest path between Java objects, XML documents and relational tables.
    </description>
 
-
    <parent>
       <groupId>org.sonatype.oss</groupId>
       <artifactId>oss-parent</artifactId>
@@ -18,11 +17,11 @@
    </parent>
 
    <name>Castor</name>
-   <url>https://github.com/castor-data-binding/castor</url>
+   <url>https://github.com/castor-data-binding/castor-jdo</url>
 
    <issueManagement>
       <system>GitHub</system>
-      <url>https://github.com/castor-data-binding/castor/issues</url>
+      <url>https://github.com/castor-data-binding/castor-jdo/issues</url>
    </issueManagement>
 
    <build>
@@ -63,7 +62,7 @@
                <version>2.8</version>
                <configuration>
                   <downloadSources>true</downloadSources>
-                  <projectNameTemplate>castor3248-[artifactId]</projectNameTemplate>
+                  <projectNameTemplate>castor-[artifactId]</projectNameTemplate>
                </configuration>
             </plugin>
             <plugin>
@@ -320,9 +319,7 @@
          <organization>Indoqa</organization>
          <organizationUrl>http://www.indoqa.com</organizationUrl>
          <roles>
-            <role>Castor XML Lead</role>
-            <role>Castor JPA Lead</role>
-            <role>Castor JDO committer</role>
+            <role>committer</role>
          </roles>
          <timezone>+1</timezone>
       </developer>
@@ -401,30 +398,14 @@
    </mailingLists>
 
    <scm>
-      <connection>scm:git:https://github.com/castor-data-binding/castor.git</connection>
+      <connection>scm:git:https://github.com/castor-data-binding/castor-jdo.git</connection>
    </scm>
 
 
    <distributionManagement>
-   <!--
-    <repository>
-      <uniqueVersion>false</uniqueVersion>
-      <id>sonatype-nexus-staging</id>
-      <name>Sonatype OSS releases</name>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-      <layout>default</layout>
-    </repository>
-    <snapshotRepository>
-      <uniqueVersion>true</uniqueVersion>
-      <id>sonatype-nexus-snapshots</id>
-      <name>Sonatype OSS snapshots</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-      <layout>default</layout>
-    </snapshotRepository>
--->
 	<site>
 	  <id>github</id>
-	  <url>scm:git:git@github.com:castor-data-binding/castor.git</url>
+	  <url>scm:git:git@github.com:castor-data-binding/castor-jdo.git</url>
 	</site>
 
   </distributionManagement>
@@ -869,7 +850,7 @@
 
     <ciManagement>
         <system>Travis CI</system>
-        <url>https://github.com/castor-data-binding/castor</url>
+        <url>https://github.com/castor-data-binding/castor-jdo</url>
     </ciManagement>
 
    <properties>

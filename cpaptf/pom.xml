@@ -8,7 +8,7 @@ http://maven.apache.org/maven-v4_0_0.xsd">
 	
     <parent>
         <groupId>org.codehaus.castor</groupId>
-        <artifactId>castor-parent</artifactId>
+        <artifactId>castor-persistence-parent</artifactId>
         <version>1.3.4-SNAPSHOT</version>
         <relativePath>../parent/pom.xml</relativePath>
     </parent>
