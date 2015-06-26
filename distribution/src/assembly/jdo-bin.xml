@@ -13,10 +13,7 @@
       <useAllReactorProjects>true</useAllReactorProjects>
       
       <includes>
-        <include>org.codehaus.castor:castor-core</include>
-        <include>org.codehaus.castor:castor-xml</include>
-        <include>org.codehaus.castor:castor-xml-annotations</include>
-        <include>org.codehaus.castor:castor-xml-diff</include>
+        <include>org.codehaus.castor:castor-jdo</include>
       </includes>
       <binaries>
         <!-- <outputDirectory>modules/maven-assembly-plugin</outputDirectory> -->

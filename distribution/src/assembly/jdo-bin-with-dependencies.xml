@@ -1,7 +1,7 @@
 <assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
-  <id>codegen-bin</id>
+  <id>xml-bin-with-dependencies</id>
   <formats>
 	<format>zip</format>    
   </formats>
@@ -13,18 +13,12 @@
       <useAllReactorProjects>true</useAllReactorProjects>
       
       <includes>
-        <include>org.codehaus.castor:castor-core</include>
-        <include>org.codehaus.castor:castor-xml</include>
-        <include>org.codehaus.castor:castor-xml-schema</include>
-        <include>org.codehaus.castor:castor-xml-annotations</include>
-        <include>org.codehaus.castor:castor-xml-diff</include>
-        <include>org.codehaus.castor:castor-codegen</include>
-        <include>org.codehaus.castor:castor-anttasks</include>
+        <include>org.codehaus.castor:castor-jdo</include>
       </includes>
       <binaries>
         <!-- <outputDirectory>modules/maven-assembly-plugin</outputDirectory> -->
         <unpack>false</unpack>
-        <includeDependencies>false</includeDependencies>
+        <includeDependencies>true</includeDependencies>
       </binaries>
     </moduleSet>
   </moduleSets>

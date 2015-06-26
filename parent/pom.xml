@@ -675,15 +675,6 @@
 
 
          <!-- module dependencies -->
-<!-- 
-
-         <dependency>
-            <groupId>org.codehaus.castor</groupId>
-            <artifactId>castor-codegen</artifactId>
-            <version>${castor.xml.version}</version>
-         </dependency>
--->
-
          <dependency>
             <groupId>org.codehaus.castor</groupId>
             <artifactId>castor-ddlgen</artifactId>
@@ -702,37 +693,8 @@
             <version>${project.version}</version>
          </dependency>
 
-<!-- 
-         <dependency>
-            <groupId>org.codehaus.castor</groupId>
-            <artifactId>castor-testsuite-xml-framework</artifactId>
-            <version>${castor.xml.version}</version>
-         </dependency>
-
-         <dependency>
-            <groupId>org.codehaus.castor</groupId>
-            <artifactId>castor-xml-diff</artifactId>
-            <version>${castor.xml.version}</version>
-         </dependency>
- -->
-
       </dependencies>
    </dependencyManagement>
-
-<!--
-   <pluginRepositories>
-      <pluginRepository>
-         <id>Maven Codehaus Snapshots</id>
-         <url>http://nexus.codehaus.org/snapshots/</url>
-         <releases>
-            <enabled>false</enabled>
-         </releases>
-         <snapshots>
-            <enabled>true</enabled>
-         </snapshots>
-      </pluginRepository>
-   </pluginRepositories>
--->
 
    <reporting>
       <plugins>
